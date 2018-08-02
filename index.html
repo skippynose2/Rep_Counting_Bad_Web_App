@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Rep Counter</title>
+  </head>
+  <body>
+    <div class="title">
+      <p>UPPER BODY</p>
+    </div>
+    <div class="machine1">
+      <p>Machine 1</p>
+      <button type="button" name="up" id="up" onClick="up1()">Done a Rep</button>
+      <p id="one">0/3</p>
+    </div>
+    <div class="machine1">
+      <p>Machine 2</p>
+      <button type="button" name="up" id="up" onClick="up2()">Done a Rep</button>
+      <p id='2'>0/3</p>
+    </div>
+    <div class="machine1">
+      <p>Machine 3</p>
+      <button type="button" name="up" id="up" onClick="up3()">Done a Rep</button>
+      <p id="3">0/3</p>
+    </div>
+    <hr></hr>
+      <div class="lower">
+        <p>LOWER BODY</p>
+      </div>
+      <div class="machine1">
+        <p>Machine 1</p>
+        <button type="button" id="up" onClick="low1()">Done a Rep</button>
+        <p id="4">0/3</p>
+      </div>
+      <div class="machine1">
+        <p>Machine 2</p>
+        <button type="button" name="up" id="up" onClick="low2()">Done a Rep</button>
+        <p id="5">0/3</p>
+      </div>
+      <div class="machine1">
+        <p>Machine 3</p>
+        <button type="button" name="up" id="up" onClick="low3()">Done a Rep</button>
+        <p id='6'>0/3</p>
+      </div>
+      <hr></hr>
+      <div class="lower">
+        <p>CORE</p>
+      </div>
+      <div class="machine1">
+        <p>Machine 1</p>
+        <button type="button" name="up" id="up" onclick="core1()">Done a Rep</button>
+        <p id="7">0/3</p>
+      </div>
+      <div class="machine1">
+        <p>Machine 2</p>
+        <button type="button" name="up" id="up" onclick="core2()">Done a Rep</button>
+        <p id="8">0/3</p>
+      </div>
+    <script type="text/javascript">
+      var h = 0;
+      var h2 = 0;
+      var h3 = 0;
+      var h4 = 0;
+      var h5 = 0;
+      var h6 = 0;
+      var h7 = 0;
+      var h8 = 0;
+
+        function up1(){
+          h = h + 1;
+          document.getElementById('one').innerHTML = h + "/3";
+        }
+        function up2(){
+          h2 = h2 + 1;
+          document.getElementById('2').innerHTML = h2 + "/3";
+        }
+        function up3(){
+          h3 = h3 + 1;
+          document.getElementById('3').innerHTML = h3 + "/3";
+        }
+        function low1(){
+          h4 = h4 + 1;
+          document.getElementById('4').innerHTML = h4 + "/3";
+        }
+        function low2() {
+          h5 = h5 + 1;
+          document.getElementById('5').innerHTML = h5 + "/3";
+        }
+        function low3(){
+          h6 = h6 + 1;
+          document.getElementById('6').innerHTML = h6 + "/3";
+        }
+        function core1(){
+          h7 = h7 + 1;
+          document.getElementById('7').innerHTML = h7 + "/3";
+        }
+        function core2(){
+          h8 = h8 + 1;
+          document.getElementById('8').innerHTML = h8 + "/3";
+        }
+    </script>
+  </body>
+</html>
